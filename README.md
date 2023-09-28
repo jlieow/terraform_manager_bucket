@@ -18,6 +18,6 @@ To uninstall terraformx, run `scoop uninstall terraformx`
 
 To remove the bucket, run `scoop bucket rm <name>`
 
-## Update hash for new terraformSHA-256
+## Update hash for new manifests
 
-To create a new hash for your bucket, run `curl <url> | shasum -a 256`
+Each bucket contains a manifest in the form of a json file. To create a new hash for your manifests, run `curl <url> | shasum -a 256` where url is the url in the manifest.
